@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<style>
+
+    .gridcontainer{
+        display: grid;
+        grid-template-columns: auto auto auto auto auto  ;
+        padding: 10px;
+
+    }
+    .footer{
+
+        position: fixed;
+        text-align: center;
+        bottom: 0;
+        background-color: white;
+
+    }
+
+    body{
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .topnav{
+        background-color: pink;
+        overflow:hidden;
+
+    }
+    .center{
+        display: flex;
+        justify-content: center;
+        <!--width: 50%;
+        margin: auto;-->
+
+
+    }
+    .center1{
+        display: flex;
+        justify-content: center;
+        <!--width: 50%;
+        margin: auto;-->
+        padding: 50px;
+        font-size: 80px;
+
+
+
+    }
+    img{
+        max-width: 20%;
+        max-height: 20%;
+    }
+
+    .topnav a{
+        float: right;
+        background-color: pink;
+        text-decoration:none;
+        padding: 5px;
+        color: white;
+
+    }
+
+    .topnav a:hover{
+        background-color: white;
+        color: black
+
+    }
+
+    h1{
+        text-align: center;
+        color: pink;
+        
+        
+        
+    }
+    h4{
+        text-align: center;
+        color: gray;
+        
+        
+        
+    }
+    .no{
+        background-color:red;
+        color: white;
+        border:0;
+        width: 6em;
+        height: 4em;
+        border-radius: 12px;
+
+
+
+    }
+    .yes{
+        background-color:green;
+        color: white;
+        border:0;
+        width: {{6*multiplier}}em;
+        height: {{4*multiplier}}em;
+        border-radius: 12px;
+
+
+
+    }
+
+    .text{
+        font-size:{{0.9+blub}}em;
+        color:pink;
+        text-align: center;
+
+    }
+
+</style>
+<body>
+    <div class= "topnav">
+        <a href="{{url_for('name')}}">home</a>
+
+    </div>
+
+    <p><h1>Will you, {{name1}}, be my valentines ?</h1></p>
+
+    <div class="center1"><img src="static/dog-flower.gif"> </div>
+
+    <br>
+    <br>
+
+    <div class="center">
+        {% if multiplier > 1 %}
+            {% if text == 1 %}
+                <div class="text"> dont do this to me </div>
+            {% endif %}
+
+            {% if text == 2 %}
+                <div class="text"> wait why not :( </div>
+            {% endif %}
+
+            {% if text == 3 %}
+                <div class="text"> reconsider plsss </div>
+            {% endif %}
+
+            {% if text == 4 %}
+                <div class="text"> uwahhhhhhhhh </div>
+            {% endif %}
+
+        {% endif %}
+    </div>
+
+    <div class="gridcontainer">
+        {% if random == 1 %}
+            <div class="center1">
+                <form method="POST" action="" >
+                    <input type="submit" class="no" name="no" value="no">
+                </form>
+            </div>
+        {% else %}
+            <div class="center1">
+                <form method="POST" action="" >
+                    <input type="submit" class="no" hidden name="no" value="no">
+                </form>
+            </div>
+        {% endif %}
+        {% if random == 2 %}
+            <div class="center1">
+                <form method="POST" action="" >
+                    <input type="submit" class="no" name="no" value="no">
+                </form>
+            </div>
+        {% else %}
+            <div class="center1">
+                <form method="POST" action="" >
+                    <input type="submit" class="no" hidden name="no" value="no">
+                </form>
+            </div>
+        {% endif %}
+        {% if random == 3 %}
+            <div class="center1">
+                <form method="POST" action="" >
+                    <input type="submit" class="no" name="no" value="no">
+                </form>
+            </div>
+        {% else %}
+            <div class="center1">
+                <form method="POST" action="" >
+                    <input type="submit" class="no" hidden name="no" value="no">
+                </form>
+            </div>
+        {% endif %}
+        {% if random == 4 %}
+            <div class="center1">
+                <form method="POST" action="" >
+                    <input type="submit" class="no" name="no" value="no">
+                </form>
+            </div>
+        {% else %}
+            <div class="center1">
+                <form method="POST" action="" >
+                    <input type="submit" class="no" hidden name="no" value="no">
+                </form>
+            </div>
+        {% endif %}
+        {% if random == 5 %}
+            <div class="center1">
+                <form method="POST" action="" >
+                    <input type="submit" class="no" name="no" value="no">
+                </form>
+            </div>
+        {% else %}
+            <div class="center1">
+                <form method="POST" action="" >
+                    <input type="submit" class="no" hidden name="no" value="no">
+                </form>
+            </div>
+        {% endif %}
+        {% if random == 6 %}
+            <div class="center1">
+                <form method="POST" action="" >
+                    <input type="submit" class="no" name="no" value="no">
+                </form>
+            </div>
+        {% else %}
+            <div class="center1">
+                <form method="POST" action="" >
+                    <input type="submit" class="no" hidden name="no" value="no">
+                </form>
+            </div>
+        {% endif %}
+        {% if random == 7 %}
+            <div class="center1">
+                <form method="POST" action="" >
+                    <input type="submit" class="no" name="no" value="no">
+                </form>
+            </div>
+        {% else %}
+            <div class="center1">
+                <form method="POST" action="" >
+                    <input type="submit" class="no" hidden name="no" value="no">
+                </form>
+            </div>
+        {% endif %}
+        {% if random == 8 %}
+            <div class="center1">
+                <form method="POST" action="" >
+                    <input type="submit" class="no" name="no" value="no">
+                </form>
+            </div>
+        {% else %}
+            <div class="center1">
+                <form method="POST" action="" >
+                    <input type="submit" class="no" hidden name="no" value="no">
+                </form>
+            </div>
+        {% endif %}
+        {% if random == 9 %}
+            <div class="center1">
+                <form method="POST" action="" >
+                    <input type="submit" class="no" name="no" value="no">
+                </form>
+            </div>
+        {% else %}
+            <div class="center1">
+                <form method="POST" action="" >
+                    <input type="submit" class="no" hidden name="no" value="no">
+                </form>
+            </div>
+        {% endif %}
+        {% if random == 10 %}
+            <div class="center1">
+                <form method="POST" action="" >
+                    <input type="submit" class="no" name="no" value="no">
+                </form>
+            </div>
+        {% else %}
+            <div class="center1">
+                <form method="POST" action="" >
+                    <input type="submit" class="no" hidden name="no" value="no">
+                </form>
+            </div>
+        {% endif %}
+        {% if random == 11 %}
+            <div class="center1">
+                <form method="POST" action="" >
+                    <input type="submit" class="no" name="no" value="no">
+                </form>
+            </div>
+        {% else %}
+            <div class="center1">
+                <form method="POST" action="" >
+                    <input type="submit" class="no" hidden name="no" value="no">
+                </form>
+            </div>
+        {% endif %}
+
+        <div class="center1"><form method="POST" action="" >
+        <input type="submit" class="yes" name="yes" value="yes">
+    </form></div>
+
+        {% if random == 12 %}
+            <div class="center1">
+                <form method="POST" action="" >
+                    <input type="submit" class="no" name="no" value="no">
+                </form>
+            </div>
+        {% else %}
+            <div class="center1">
+                <form method="POST" action="" >
+                    <input type="submit" class="no" hidden name="no" value="no">
+                </form>
+            </div>
+        {% endif %}
+        {% if random == 13 %}
+            <div class="center1">
+                <form method="POST" action="" >
+                    <input type="submit" class="no" name="no" value="no">
+                </form>
+            </div>
+        {% else %}
+            <div class="center1">
+                <form method="POST" action="" >
+                    <input type="submit" class="no" hidden name="no" value="no">
+                </form>
+            </div>
+        {% endif %}
+
+
+
+        {% if random == 14 %}
+            <div class="center1">
+                <form method="POST" action="" >
+                    <input type="submit" class="no" name="no" value="no">
+                </form>
+            </div>
+        {% else %}
+            <div class="center1">
+                <form method="POST" action="" >
+                    <input type="submit" class="no" hidden name="no" value="no">
+                </form>
+            </div>
+        {% endif %}
+        {% if random == 15 %}
+            <div class="center1">
+                <form method="POST" action="" >
+                    <input type="submit" class="no" name="no" value="no">
+                </form>
+            </div>
+        {% else %}
+            <div class="center1">
+                <form method="POST" action="" >
+                    <input type="submit" class="no" hidden name="no" value="no">
+                </form>
+            </div>
+        {% endif %}
+        {% if random == 16 %}
+            <div class="center1">
+                <form method="POST" action="" >
+                    <input type="submit" class="no" name="no" value="no">
+                </form>
+            </div>
+        {% else %}
+            <div class="center1">
+                <form method="POST" action="" >
+                    <input type="submit" class="no" hidden name="no" value="no">
+                </form>
+            </div>
+        {% endif %}
+        {% if random == 17 %}
+            <div class="center1">
+                <form method="POST" action="" >
+                    <input type="submit" class="no" name="no" value="no">
+                </form>
+            </div>
+        {% else %}
+            <div class="center1">
+                <form method="POST" action="" >
+                    <input type="submit" class="no" hidden name="no" value="no">
+                </form>
+            </div>
+        {% endif %}
+        {% if random == 18 %}
+            <div class="center1">
+                <form method="POST" action="" >
+                    <input type="submit" class="no" name="no" value="no">
+                </form>
+            </div>
+        {% else %}
+            <div class="center1">
+                <form method="POST" action="" >
+                    <input type="submit" class="no" hidden name="no" value="no">
+                </form>
+            </div>
+        {% endif %}
+        {% if random == 19 %}
+            <div class="center1">
+                <form method="POST" action="" >
+                    <input type="submit" class="no" name="no" value="no">
+                </form>
+            </div>
+        {% else %}
+            <div class="center1">
+                <form method="POST" action="" >
+                    <input type="submit" class="no" hidden name="no" value="no">
+                </form>
+            </div>
+        {% endif %}
+        {% if random == 20 %}
+            <div class="center1">
+                <form method="POST" action="" >
+                    <input type="submit" class="no" name="no" value="no">
+                </form>
+            </div>
+        {% else %}
+            <div class="center1">
+                <form method="POST" action="" >
+                    <input type="submit" class="no" hidden name="no" value="no">
+                </form>
+            </div>
+        {% endif %}
+        {% if random == 21 %}
+            <div class="center1">
+                <form method="POST" action="" >
+                    <input type="submit" class="no" name="no" value="no">
+                </form>
+            </div>
+        {% else %}
+            <div class="center1">
+                <form method="POST" action="" >
+                    <input type="submit" class="no" hidden name="no" value="no">
+                </form>
+            </div>
+        {% endif %}
+        {% if random == 22 %}
+            <div class="center1">
+                <form method="POST" action="" >
+                    <input type="submit" class="no" name="no" value="no">
+                </form>
+            </div>
+        {% else %}
+            <div class="center1">
+                <form method="POST" action="" >
+                    <input type="submit" class="no" hidden name="no" value="no">
+                </form>
+            </div>
+        {% endif %}
+        {% if random == 23 %}
+            <div class="center1">
+                <form method="POST" action="" >
+                    <input type="submit" class="no" name="no" value="no">
+                </form>
+            </div>
+        {% else %}
+            <div class="center1">
+                <form method="POST" action="" >
+                    <input type="submit" class="no" hidden name="no" value="no">
+                </form>
+            </div>
+        {% endif %}
+        {% if random == 24 %}
+            <div class="center1">
+                <form method="POST" action="" >
+                    <input type="submit" class="no" name="no" value="no">
+                </form>
+            </div>
+        {% else %}
+            <div class="center1">
+                <form method="POST" action="" >
+                    <input type="submit" class="no" hidden name="no" value="no">
+                </form>
+            </div>
+        {% endif %}
+
+
+
+    </div>
+
+
+
+    <div class="center">
+        <div class="footer"> <p>©Eman Tech industries</p> </div>
+    </div>
+
+</body>
+</html>

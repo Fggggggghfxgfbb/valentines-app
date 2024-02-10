@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+<style>
+
+    body{
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .footer{
+
+        position: fixed;
+        text-align: center;
+        bottom: 0;
+
+    }
+    .topnav{
+        background-color: pink;
+        overflow:hidden;
+
+    }
+    .scale{
+        width: 60vw
+        height: 30vh
+
+
+    }
+
+    .center{
+        display: flex;
+        justify-content: center;
+        <!--width: 50%;
+        margin: auto;-->
+
+    }
+    .bruh{
+        width: 40vw;
+        padding: 10px 50vw;
+
+
+    }
+    .topnav a{
+        float: right;
+        background-color: pink;
+        text-decoration:none;
+        padding: 5px;
+        color: white;
+
+    }
+
+    .topnav a:hover{
+        background-color: white;
+        color: black
+
+    }
+
+    h1{
+
+        color: pink;
+
+    h5{
+
+        color: gray;
+        
+    }
+
+</style>
+<body>
+    <div class= "topnav">
+        <a href="">&nbsp;</a>
+
+        
+    </div>
+    <div class="center"><h1>Welcome to the site. This is not suspicious just enter your name</h1></div>
+    <div class="center">
+
+        <form method="POST" action="">
+            {{form.hidden_tag()}}
+            {{form.name}}<br><br>
+            <br><br>
+            {{form.submit}}
+        </form>
+
+
+    </div>
+    <div class="center">
+        <div class="footer"> <p>©Eman Tech industries</p> </div>
+    </div>
+
+
+</body>
+</html>

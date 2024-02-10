@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home2</title>
+</head>
+<style>
+
+    .gridcontainer{
+        display: grid;
+        grid-template-columns: auto auto auto auto auto  ;
+        padding: 10px;
+
+    }
+    .footer{
+
+        position: fixed;
+        text-align: center;
+        bottom: 0;
+        background-color: white;
+
+    }
+
+    body{
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .topnav{
+        background-color: pink;
+        overflow:hidden;
+
+    }
+    .center{
+        display: flex;
+        justify-content: center;
+        <!--width: 50%;
+        margin: auto;-->
+
+
+    }
+    .center1{
+        display: flex;
+        justify-content: center;
+        <!--width: 50%;
+        margin: auto;-->
+        padding: 50px;
+        font-size: 80px;
+
+
+
+    }
+    img{
+        max-width: 20%;
+        max-height: 20%;
+    }
+
+    .topnav a{
+        float: right;
+        background-color: pink;
+        text-decoration:none;
+        padding: 5px;
+        color: white;
+
+    }
+
+    .topnav a:hover{
+        background-color: white;
+        color: black
+
+    }
+
+    h1{
+        text-align: center;
+        color: pink;
+
+
+
+    }
+    h4{
+        text-align: center;
+        color: gray;
+
+
+
+    }
+    .no{
+        background-color:red;
+        color: white;
+        border:0;
+        width: 6em;
+        height: 4em;
+        border-radius: 12px;
+
+
+
+    }
+    .yes{
+        background-color:green;
+        color: white;
+        border:0;
+        width: {{6*multiplier}}em;
+        height: {{4*multiplier}}em;
+        border-radius: 12px;
+
+
+
+    }
+
+    .text{
+        font-size:{{0.9+blub}}em;
+        color:pink;
+        text-align: center;
+
+    }
+
+</style>
+<body>
+    <div class= "topnav">
+        <a href="{{url_for('name')}}">home</a>
+
+    </div>
+
+    <p>
+        <h1> yayyyy {{name1}}, youre my valentines now !!</h1>
+    </p>
+
+
+    <div class="center1"><img src=" {{url_for('static', filename='/love-you.gif') }} "></div>
+
+    <br>
+    <br>
+
+    <div class="center">
+        <div class="text"> i really didnt think you'd say yes though im soooooooooooo surprised </div>
+    </div>
+
+
+    <div class="center">
+        <div class="footer"> <p>©Eman Tech industries</p> </div>
+    </div>
+
+</body>
+</html>
